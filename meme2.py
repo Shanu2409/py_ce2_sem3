@@ -5,7 +5,7 @@ response = requests.get("https://meme-api.herokuapp.com/gimme/wholesomememes/2")
 meme = response.json()
 url = (meme['url'])
 
-filename = './post/meme2.jpg'
+filename = './post/meme2.png'
 
 r = requests.get(url)
 

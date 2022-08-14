@@ -11,4 +11,6 @@ def generate():
 
     with open(filename, 'wb') as f:
         f.write(r.content)
-generate()
+        return filename
+
+# generate()

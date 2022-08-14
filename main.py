@@ -1,22 +1,29 @@
-# import schedular as sc
 import cats as c
 import app as post
-import schedule as sc
 import time
+import fox as f
+import meme as meme
+import fake as fake
+import random
 
+
+def select():
+    num = round(random.randint(0,3))
+    if num == 0:
+        return c.generate()
+    elif num == 1:
+        return f.generate()
+    elif num == 2:
+        return fake.generate()
+    elif num == 3:
+        return meme.generate()
 
 def run():
-    c.generate()
-    post.post()
+    # f.generate()
+    post.post(select())
 
-# run()
-# sc.every().day.at("20:46").do(run)
-# sc.every(60).seconds.do(run)
 
-# while (True):
-#     sc.run_pending()
-#     time.sleep(10)
 
 run()
 
-time.sleep(10)
+time.sleep(5)
