@@ -10,13 +10,13 @@ import random
 def select():
     num = round(random.randint(0,3))
     if num == 0:
-        return c.generate()
+        return c.generate() #cat
     elif num == 1:
-        return f.generate()
+        return f.generate() #fox
     elif num == 2:
-        return fake.generate()
+        return fake.generate() #fake
     elif num == 3:
-        return meme.generate()
+        return meme.generate() #meme
 
 def run():
     # f.generate()
