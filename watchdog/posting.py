@@ -1,7 +1,7 @@
 from instabot import Bot
 import os
-
 bot = Bot()
+import resize as re
 
 user = 'deadshort2020'
 pas = 'pass@777'
@@ -11,10 +11,10 @@ bot.login(username=user, password=pas)
 
 
 def posting(src):
-    bot.upload_photo(src, caption='form src')
     try:
+        bot.upload_photo(src, caption='form src')
         dl = src + '.REMOVE_ME'
         os.remove(dl)
     except:
-        pass
+        print("PHOTO NOT UPLOADED... MAY BE BECAUSE OF NOT COMPATIBLE ASPECT RATIO OF IMAGE...")
     print("done posting....")
