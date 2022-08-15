@@ -23,7 +23,6 @@ class Watcher:
         self.observer.join()
         print("\nWatcher Terminated\n")
 
-
 class MyHandler(FileSystemEventHandler):
 
     def on_created(self, event):
