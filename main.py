@@ -19,7 +19,6 @@ def select():
         return meme.generate() #meme
 
 def run():
-    # f.generate()
     post.post(select())
 
 
